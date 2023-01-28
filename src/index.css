@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+
+:root {
+  --violet: #101227;
+  --lightviolet: #292d4d;
+  --purple: #a293ec;
+  --white: #e7e8ee;
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--violet);
+  color: var(--white);
+  box-sizing: border-box;
+  font-family: "Mukta Malar", sans-serif;
+}
+
+/* APP SECTION */
+.main {
+  margin-top: 3%;
+}
+
+/* HEADER SECTION */
+.head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.head-image {
+  width: auto;
+  transition: max-width 1s, min-width 1.5s;
+}
+
+.head-image-expanded {
+  min-width: 300px;
+  max-width: 280px;
+}
+
+.head-image-contracted {
+  min-width: 100px;
+  max-width: 220px;
+}
+
+.head-text {
+  margin: 5px 0 15px 0;
+}
+/* 
+.img-container{
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  width: 300px; 
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+
+} */
+
+/* SEARCHBOX SECTION */
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.search-input {
+  background-color: var(--purple);
+  width: 20rem;
+  height: 2rem;
+  border: none;
+  border-radius: 20px;
+  /* font-weight: bold; */
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+/*RESULT CONTAINER SECTION */
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+/*NAMECARD SECTION */
+.result-name-card {
+  color: var(--white);
+  background: var(--lightviolet);
+  margin: 8px 15px;
+  min-width: 75px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px5px rgba(255, 255, 255, 0.1);
+  transition: background 0.35s;
+  display: flex;
+  justify-content: center;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.result-name-card:hover {
+  background: var(--purple);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.result-name {
+  margin: 0;
+  font-weight: 100;
+  background: var(--lightviolet);
+}
+
+.result-name:hover {
+  background-color: var(--purple);
+}
